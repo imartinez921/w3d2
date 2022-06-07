@@ -1,0 +1,15 @@
+require_relative "board.rb"
+require_relative "card.rb"
+
+array = [:A,:A,:B,:B,:C,:C,:D,:D,:E,:E,:F,:F,:G,:G,:H,:H]
+deck = Array.new(16) {Card.new(array.pop)}
+
+Game = Board.new
+Game.populate(deck)
+Game.render
+
+p Game.won?
+arr = [1, 2]
+p Game.reveal(arr)
+
+Game.render
