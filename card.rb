@@ -1,3 +1,5 @@
+require_relative "board.rb"
+
 class Card
 
 def initialize(value)

@@ -3,7 +3,12 @@ require_relative "card.rb"
 class Board 
 
   def initialize(size=4)
-    @board = Array.new(4) {Array.new(4) {nil}}
+    @board = Array.new(size) {Array.new(size) {nil}}
+    @size = size
+  end
+
+  def size
+    @size
   end
 
   def [](pos)
