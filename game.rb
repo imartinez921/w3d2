@@ -17,6 +17,10 @@ class Game
     @board.populate(deck)
   end
 
+  def board
+    @board
+  end
+
   def play
     @board.render
     while !@board.won?
